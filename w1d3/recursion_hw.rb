@@ -1,19 +1,10 @@
-# prevents stack overflow
-MAX_STACK_SIZE = 200
-tracer = proc do |event|
-  if event == 'call' && caller_locations.length > MAX_STACK_SIZE
-    fail "Probable Stack Overflow"
-  end
-end
-set_trace_func(tracer)
-
 # Exercise 1 - sum_to
 # Write a function sum_to(n) that uses recursion to calculate the sum
 # from 1 to n (inclusive of n).
 def sum_to(num)
   return nil if num < 1
   return 1 if num == 1
-  num + sum_to(num-1)
+  num + sum_to(num - 1)
 end
 
 # # Test Cases
@@ -58,10 +49,8 @@ end
 # favorite flavor.
 def ice_cream_shop(flavors, favorite)
   return false if flavors.length < 1
-  return true if flavors.pop == favorite
-  ice_cream_shop(flavors, favorite)
-  # return true if flavors.first == favorite
-  # ice_cream_shop(flavors[1..-1], favorite)
+  return true if flavors.first == favorite
+  ice_cream_shop(flavors[1..-1], favorite)
 end
 
 # # Test Cases
@@ -76,8 +65,7 @@ end
 def reverse(string)
   return "" if string.empty?
   string[-1] + reverse(string[0..-2])
-  # reverse(string[1..-1]) + string[0]
-end end
+end
 
 # # Test Cases
 # p reverse("house") # => "esuoh"
