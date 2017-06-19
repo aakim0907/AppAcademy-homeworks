@@ -3,7 +3,7 @@
 <ul>
   <% @books.each do |book| %>
     <li><%= book.title %> by <%= book.author %></li>
-    <%= button_to "delete", book_url(book), method: :delete %>
+    <%= button_to "delete", books_url(book), method: :delete %>
     <br>
   <% end %>
 </ul>
