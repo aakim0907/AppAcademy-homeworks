@@ -18,6 +18,8 @@ Homeworks completed at AppAcademy
 * w3d5 : Metacorgis
 
 ## Week 4
+* HTML/CSS : Recipe page
+* w4d1 : Library Controller
 
 ## Week 5
 
