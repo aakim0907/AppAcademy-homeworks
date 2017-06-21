@@ -20,6 +20,7 @@ Homeworks completed at AppAcademy
 ## Week 4
 * HTML/CSS : Recipe page
 * w4d1 : Library Controller
+* w4d3 : Rails Auth
 
 ## Week 5
 
