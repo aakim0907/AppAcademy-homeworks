@@ -1,5 +1,5 @@
 class LinksController < ApplicationController
-  before_filter :require_sign_in!
+  before_filter :require_sign_in
 
   def index
     @links = Link.all

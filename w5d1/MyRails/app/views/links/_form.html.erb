@@ -1,0 +1,23 @@
+<% action = (link.persisted? ? link_url : links_url) %>
+<% verb = ( link.persisted? ? "patch" : "post") %>
+<% submit_value = ( link.persisted? ? "Update Link" : "Create New Link") %>
+
+<form action="<%=action%>" method="post">
+  <input type="hidden" name="_method" value="<%=verb%>">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label>Title
+    <input type="text" name="link[title]" value="<%=link.title%>">
+  </label>
+
+  <br>
+
+  <label>URL
+    <input type="text" name="link[url]" value="<%=link.url%>">
+  </label>
+
+  <br>
+
+  <input type="submit" value="<%=submit_value%>">
+
+</form>

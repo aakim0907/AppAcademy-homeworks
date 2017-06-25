@@ -1,0 +1,16 @@
+<h1> My Rails App </h1>
+
+<h2> Links </h2>
+<% if @links.empty? %>
+  There are no links yet. Add one yourself!
+<% else %>
+  <ul>
+    <% @links.each do |link| %>
+    <li>Title: <%= link_to link.title, link_url(link) %> : <%= link.url %> </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<br>
+
+<%= link_to "New Link", new_link_url %>

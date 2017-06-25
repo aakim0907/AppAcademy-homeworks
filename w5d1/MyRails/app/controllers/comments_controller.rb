@@ -1,10 +1,12 @@
 class CommentsController < ApplicationController
+  before_filter :require_sign_in
+
   def create
     @comment = Comment.new(comment_params)
     @comment.user_id = current_user.id
     @comment.save
-    flash[:errors] = comment.errors.full_messages
-    redirect_to link_url(comment.link_id)
+    flash[:errors] = @comment.errors.full_messages
+    redirect_to link_url(@comment.link_id)
   end
 
   def destroy
