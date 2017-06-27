@@ -9,22 +9,21 @@
   </head>
 
   <body>
-    <% if current_user %>
+    <% if signed_in? %>
       Welcome, <%= current_user.username %>
-      || <%= button_to "Sign Out", session_url, method: :delete %>
+      <%= button_to "Sign Out", session_url, method: :delete %>
     <% else %>
       <%= link_to "Sign Up", new_user_url %> ||
       <%= link_to "Sign In", new_session_url %>
     <% end %>
 
-    <% if flash[:errors] %>
-      <ul>
-        <% flash[:errors].each do |error| %>
-        <li> <%= error %> </li>
-        <% end %>
-      </ul>
-    <% end %>
+    <ul>
+      <% flash[:errors].try(:each) do |error| %>
+      <li> <%= error %> </li>
+      <% end %>
+    </ul>
 
     <%= yield %>
+
   </body>
 </html>

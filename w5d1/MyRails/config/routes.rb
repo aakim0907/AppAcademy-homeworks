@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   # put 'links/:id', to: 'links#update'
   # delete 'links/:id', to: 'links#destroy'
 
+  root 'links#index'
   resources :users, only: [:new, :create]
-  resources :links
+  resources :links, except: [:destroy]
   resources :comments, only: [:create, :destroy]
   resource :session, only: [:new, :create, :destroy]
 end
