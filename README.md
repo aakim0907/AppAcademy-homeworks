@@ -23,6 +23,8 @@ Homeworks completed at AppAcademy
 * w4d3 : Rails Auth
 
 ## Week 5
+* w5d1 : MyRails(MVC, Auth)
+* w5d3 : Intro to JavaScript
 
 ## Week 6
 
