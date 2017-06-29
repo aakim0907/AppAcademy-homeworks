@@ -1,0 +1,37 @@
+#reviews {
+  background-color: #ADFDD5;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FEFFF1;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h4 {
+  font-style: italic;
+}
+
+.ingredients-list {
+  list-style: square;
+}
+
+ol {
+  list-style: upper-roman;
+}
+
+header > img {
+  width: 130px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
