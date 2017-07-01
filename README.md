@@ -25,8 +25,10 @@ Homeworks completed at AppAcademy
 ## Week 5
 * w5d1 : MyRails(MVC, Auth)
 * w5d3 : Intro to JavaScript
+* w5d4 : Callbacks and Function Calls
 
 ## Week 6
+* w6d1 : JS reivew, Wacky jQuery
 
 ## Week 7
 
