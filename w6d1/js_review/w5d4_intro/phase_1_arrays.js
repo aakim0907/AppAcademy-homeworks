@@ -1,4 +1,4 @@
-Array#uniq
+// Array#uniq
 Array.prototype.uniq = function () {
   const returnUniq = [];
   for (var i = 0; i < this.length; i++) {
