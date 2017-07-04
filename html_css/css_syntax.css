@@ -72,6 +72,7 @@ h2 + .user_review {
 }
 
 nav {
+  float: right;
     display: inline-block;
 }
 
