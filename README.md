@@ -29,6 +29,7 @@ Homeworks completed at AppAcademy
 
 ## Week 6
 * w6d1 : JS reivew, Wacky jQuery
+* w6d3 : Ajax Request
 
 ## Week 7
 
