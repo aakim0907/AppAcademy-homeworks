@@ -9,6 +9,8 @@
 
 Array.prototype.twoSum = function () {
 
+
+
 };
 
 console.log([1,4,6,-1,7,3,-4].twoSum()); //[[0,3], [1,6]]

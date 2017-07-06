@@ -8,33 +8,34 @@
 
 // using spread
 Function.prototype.curry = function (numArgs) {
-  const args = [];
 
-  const _curry = (arg) => {
-    args.push(arg);
-    if (args.length === numArgs){
-      return this(...args);
-    } else {
-      return _curry;
-    }
-  };
-  return _curry;
+
 };
 
 function sumThree(num1, num2, num3) {
   return num1 + num2 + num3;
 }
-let cur = sumThree.curry(3)(4)(20)(6);
-console.log(cur); // 30
+
+// let cur = sumThree.curry(3)(4)(20)(6);
+// console.log(cur); // 30
 
 
 // using apply
 Function.prototype.curry1 = function(numArgs){
 
+  const args = [];
+  const fn = this;
+
+  const _curry = function(arg) {
+    args.push(arg);
+    if (args.length === numArgs) {
+      return fn.apply(null, args);
+    } else {
+      return _curry;
+    }
+  }
+  return _curry;
 };
 
-function sumThree2(num1, num2, num3) {
-  return num1 + num2 + num3;
-}
-// let cur1 = sumThree2.curry1(3)(4)(20)(6);
-// console.log(cur1); // 30
+let cur1 = sumThree.curry1(3)(4)(20)(6);
+console.log(cur1); // 30

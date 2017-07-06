@@ -5,6 +5,7 @@
 
 Function.prototype.inherits1 = function (BaseClass) {
 
+
 };
 
 
@@ -17,6 +18,7 @@ Function.prototype.inherits1 = function (BaseClass) {
 // Object.create. Make sure to test that your updated solution works.
 
 Function.prototype.inherits2 = function (BaseClass) {
+
 
 };
 
@@ -37,7 +39,7 @@ function Corgi (name) {
   Dog.call(this, name);
 }
 
-Corgi.inherits2(Dog); // change to inherits2 to test your second method
+Corgi.inherits1(Dog); // change to inherits2 to test your second method
 
 Corgi.prototype.waddle = function () {
   console.log(this.name + " waddles!");

@@ -1,5 +1,7 @@
 function myBsearch(array, target) {
 
+
+
 }
 
 console.log(myBsearch([1,2,3,4,5], 2) ); // 1

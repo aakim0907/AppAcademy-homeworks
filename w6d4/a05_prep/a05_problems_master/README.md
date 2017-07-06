@@ -26,34 +26,34 @@ for easier Chrome debugging, Slack me.*
 *Any emphasized problem was mentioned explicitly by a T.A.*
 
 ## New from JavaScript Curriculum
-* rangeRecursive
+* rangeRecursive - O
 * userAddNumbers
-* sumArgs (sum with any number of args)
-* *myBind (with or without args)*
-* *inherits (be able to write using surrogates, object.create, and ES6)*
-* *curriedSum*
-* *curry*
+* sumArgs (sum with any number of args) - O
+* *myBind (with or without args)* - O
+* *inherits (be able to write using surrogates, object.create, and ES6)* - 1
+* *curriedSum* - 0
+* *curry* - 1
 
 ## Recursion:
 * baseConverter
 * digitalRoot
 * deepDub
 * exponents
-* factorialsRec
+* factorialsRec - 1
 * fibSum
 * firstEvenNumsSum
 * permutations
 * primeFactorization
 * recSum
 * stringIncludeKey
-* *subsets*
+* *subsets* - 1
 
 ## Search and Sort
-* *binarySearch*
-* *bubbleSort*
+* *binarySearch* - 1
+* *bubbleSort* - 0
 * jumbleSort
-* *mergeSort*
-* *quickSort*
+* *mergeSort* - 0
+* *quickSort* - 0
 
 ## Enumerable
 * myEvery (my_all in Ruby)
@@ -61,25 +61,25 @@ for easier Chrome debugging, Slack me.*
 * myForEach
 * mySome (my_any in Ruby)
 * myJoin
-* myInject (in JS, inject is .reduce())
+* myInject - 0
 * myReject (no built-in equivalent in JS)
 * myReverse
 * myRotate
 * mySelect (in JS, select is .filter())
-* *myTranspose*
-* *myZip*
+* *myTranspose* - 0
+* *myZip* - 0
 
 ## Iteration:
 * caesarsCipher
-* pigLatin
-* realWordsInString
-* symmetricSubStrings
+* pigLatin - 0
+* realWordsInString - 0
+* symmetricSubStrings - 1
 * titleize
-* twoSum
+* twoSum - 0
 
 ## Super Easy Warm Ups:
-* doubler
-* factors
+* doubler - O
+* factors - O
 * median
 * dups
 * primes

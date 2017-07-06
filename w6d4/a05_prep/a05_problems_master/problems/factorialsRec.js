@@ -4,6 +4,7 @@
 
 const factorialsRec = (num) => {
 
+
 };
 
 console.log(factorialsRec(5)); // [1,1,2,6,24]

@@ -3,8 +3,14 @@
 // Only include substrings of length > 1.
 
 
-String.prototype.symetricSubstrings = function () {
+String.prototype.symetricSubstrings = function() {
+
+
 
 };
 
+
+console.log("hoh".isPalindrome());
+
 console.log("cool".symetricSubstrings()); // ['oo']
+console.log("abcbawaba".symetricSubstrings());

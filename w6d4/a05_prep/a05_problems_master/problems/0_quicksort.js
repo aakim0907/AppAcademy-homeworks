@@ -4,6 +4,8 @@
 
 Array.prototype.quickSort = function (comparator) {
 
+
+
 };
 
 // this call back is essentially the prc we would pass in ruby.
@@ -18,5 +20,5 @@ const compA = (a,b) => {
   }
 };
 
-const test = [7,3,5,2,8,1,9,3,4,].quickSort(compA);
+const test = [7,3,5,2,8,1,9,3,4].quickSort(compA);
 console.log(test);

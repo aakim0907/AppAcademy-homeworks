@@ -2,7 +2,20 @@
 // In the JS exercises, you are required to use myForEach.
 // So make sure you can write this for forEach opposed to a for loop!
 
-Array.prototype.myInject = function (cb) {
+// Array.prototype.myInject = function (cb) {
+//
+//
+// }
+
+
+// with optional accum
+Array.prototype.myInject = function (cb, accum = this.shift()) {
+
+  for (let i = 0; i < this.length; i++) {
+    accum = cb(accum, this[i]);
+  }
+
+  return accum;
 
 };
 

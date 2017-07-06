@@ -9,6 +9,7 @@ Array.prototype.mergeSort = function(comparator) {
 
 function merge(left, right, comparator) {
 
+
 }
 
 

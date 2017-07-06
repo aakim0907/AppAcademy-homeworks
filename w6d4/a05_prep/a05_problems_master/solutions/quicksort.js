@@ -1,6 +1,5 @@
 //Hint: quicksort checks by pivoting!
 
-
 Array.prototype.quickSort = function () {
   if (this.length < 2) {
     return this;

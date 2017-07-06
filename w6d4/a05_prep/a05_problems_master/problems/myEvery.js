@@ -1,7 +1,7 @@
-// in JAvascript Array.every is essesntially Ruby's Array.all
+// in Javascript Array.every is essesntially Ruby's Array.all
 
 Array.prototype.myEvery = function (cb) {
-
+  
 };
 
 // Tester Callback

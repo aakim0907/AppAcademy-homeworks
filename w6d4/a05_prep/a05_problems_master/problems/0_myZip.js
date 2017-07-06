@@ -1,5 +1,6 @@
 Array.prototype.myZip = function (...arrays) {
 
+
 };
 
 
