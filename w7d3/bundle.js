@@ -12180,7 +12180,24 @@ document.addEventListener('DOMContentLoaded', function () {
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.GiphysReducer = undefined;
+
 var _giphy_actions = __webpack_require__(58);
+
+var GiphysReducer = exports.GiphysReducer = function GiphysReducer() {
+  var prevState = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments[1];
+
+  switch (action.type) {
+    case _giphy_actions.RECEIVE_SEARCH_GIPHYS:
+      return action.giphys;
+    default:
+      return prevState;
+  }
+};
 
 /***/ }),
 /* 114 */
