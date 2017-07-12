@@ -12153,6 +12153,12 @@ var _root2 = _interopRequireDefault(_root);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+document.addEventListener('DOMContentLoaded', function () {
+	var store = (0, _store2.default)();
+	var root = document.getElementById('root');
+	_reactDom2.default.render(_react2.default.createElement(_root2.default, { store: store }), root);
+});
+
 /***/ }),
 /* 113 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -12183,6 +12189,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 "use strict";
 
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var fetchSearchGiphys = exports.fetchSearchGiphys = function fetchSearchGiphys(searchTerm) {
+  return $.ajax({
+    method: 'GET',
+    url: 'http://api.giphy.com/v1/gifs/search?q=' + searchTerm + '&api_key=dc6zaTOxFJmzC&limit=2'
+  });
+};
 
 /***/ }),
 /* 116 */
