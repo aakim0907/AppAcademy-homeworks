@@ -33,6 +33,8 @@ Homeworks completed at AppAcademy
 * w6d4 : JS practice, Vanilla DOM Manipulation
 
 ## Week 7
+* w7d1 : Dollar Store (React, Redux)
+* w7d3 : Giphy Search
 
 ## Week 8 
 
