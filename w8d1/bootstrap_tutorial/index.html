@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
 
-    <!-- IE version control -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- End of IE version control -->
+<head>
+  <meta charset="utf-8">
 
-    <!-- set device width and zoom scale -->
-    <meta name="viewport" content="width = device-width, initial-scale = 1">
-    <!-- End of set device width and zoom scale -->
+  <!-- IE version control -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- End of IE version control -->
 
-    <!-- import bootstrap -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/boostrap/3.3.5/css/boostrap.min.css">
-    <!-- End of import boostrap -->
+  <!-- set device width and zoom scale -->
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <!-- End of set device width and zoom scale -->
 
-    <title>Bootstrap Tutorial</title>
-  </head>
-  <body>
+  <!-- import bootstrap -->
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/my.css">
+  <!-- End of import boostrap -->
 
-    <div class="container"> <!--puts padding around everything -->
-      <div class="page-header"> <!-- add space around the text -->
-        <h1>Bootstrap Tutorial</h1>
+  <title>Bootstrap Tutorial</title>
 
+</head>
+
+<body>
+  <div id="theCarousel" class="carousel slide" data-ride="carousel">
+    <!-- decide how many slides we want -->
+    <ol class="carousel-indicators">
+      <li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#theCarousel" data-slide-to="1"></li>
+      <li data-target="#theCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- slide contents -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="slide1">
+          <img src="img/pexels-photo.jpg" alt="nature1">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="slide2">
+          <img src="img/download.jpg" alt="nature2">
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="slide3">
+          <img src="img/tree.jpg" alt="nature3">
+        </div>
       </div>
     </div>
 
+    <!-- left and right controls -->
+    <a class="left carousel-control" href="#theCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#theCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
 
+  </div>
 
-    <!-- import JS scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/boostrap/3.3.5/css/boostrap.min.js"></script>
-    <!-- End of import JS scripts -->
+  <span class="glyphicon glyphicon-plus-sign"></span>
 
-  </body>
+  <!-- import JS scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/boostrap/3.3.5/css/boostrap.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- End of import JS scripts -->
+
+</body>
+
 </html>
