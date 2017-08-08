@@ -35,7 +35,3 @@ Homeworks completed at AppAcademy
 ## Week 7
 * w7d1 : Dollar Store (React, Redux)
 * w7d3 : Giphy Search
-
-## Week 8 
-
-## Week 9
